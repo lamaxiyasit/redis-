@@ -7,4 +7,7 @@ package com.example.redis_lua;
  * @Version 1.0
  */
 public class main {
+    public static void main(String[] args) {
+
+    }
 }
