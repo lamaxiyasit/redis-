@@ -1,5 +1,11 @@
 package com.example.redis_lua;
 
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.LinkedBlockingDeque;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
+
 /**
  * @Description TODO
  * @Auther chengjiahui
@@ -34,8 +40,7 @@ public class main {
     }
 
     public static void main(String[] args) {
-        main m = new main();
-        String res = m.convert("SHEINFORALL", 4);
-        System.out.println(res);
+        Map<String, String> map = new ConcurrentHashMap<String, String>();
+        map.put("1", "1");
     }
 }
